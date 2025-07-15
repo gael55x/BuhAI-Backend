@@ -1,0 +1,31 @@
+{
+    // === Disable auto-closing of brackets, quotes, tags ===
+      "editor.autoClosingBrackets": "never",
+      "editor.autoClosingQuotes": "never",
+      "editor.autoSurround": "never",
+      "editor.autoIndent": "none",     
+      
+      // === Disable automatic bracket pairs completion ===
+      "editor.formatOnType": false,
+  
+      // === Disable HTML tag auto-completion ===
+      "html.autoClosingTags": false,
+  
+      // === Disable suggestions and quick suggestions popups ===
+      "editor.quickSuggestions": {
+        "comments": "off",
+        "strings": "off",
+        "other": "off"
+      },
+      "editor.suggestOnTriggerCharacters": false,
+      "editor.parameterHints.enabled": false,
+  
+      // === Optional: Disable Emmet auto-complete for HTML ===
+      "emmet.triggerExpansionOnTab": false,
+  
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "never",
+      "source.sortMembers": "explicit"
+    }
+  }
