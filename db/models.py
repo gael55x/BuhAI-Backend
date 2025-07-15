@@ -13,7 +13,7 @@ Base = declarative_base()
 class ChatTurn(Base):
     __tablename__ = 'chat_turns'
     id = Column(Integer, primary_key=True, autoincrement=True)
-    user_id = Column(String, nullable=False, indefx=True)
+    user_id = Column(String, nullable=False, index=True)
     timestamp = Column(DateTime, nullable=False, default=func.now())
     actor = Column(String, nullable=False) # 'user' or 'assistant'
     message = Column(Text, nullable=False)
