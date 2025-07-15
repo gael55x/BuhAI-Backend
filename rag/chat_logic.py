@@ -289,7 +289,7 @@ class ChatLogic:
             *   **First Aid Notice (CRITICAL):** {execution_results.get('first_aid')}
 
             **Step 2: Response Generation Rules**
-            1.  **Language:** Respond in the user's language (Cebuano/Bisaya).
+            1.  **Language:** Respond in the user's language.
             2.  **Tone:** Be empathetic, encouraging, and clear.
             3.  **Critical First Aid:** If `First Aid Notice` exists, it is the MOST IMPORTANT information. Start your response with it.
             4.  **Address the Query:** Directly address the user's question. If they ask for "insights" or a "summary," use the data provided.
@@ -307,7 +307,7 @@ class ChatLogic:
                 - Offer a supportive closing statement (`Naa ko para nimo...`).
 
             **Step 3: Write Your Response**
-            Based on all the rules and data, generate your final response now.
+            Based on all the rules and data, generate your final response now. Limit to 50-70 words depending on the context.
 
             **Your Response:**
             """
