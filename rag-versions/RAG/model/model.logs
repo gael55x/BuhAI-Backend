@@ -1,0 +1,175 @@
+Feature engineering complete. Data shape: (8052, 6)
+Data split: Train (5636), Validation (805), Test (1611)
+Scalers saved to models/scaler_mv.pkl
+
+--- Training for 30-minute horizon ---
+--- Training LSTM model... ---
+Epoch 1/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 2s 5ms/step - loss: 0.0192 - mae: 0.0891 - val_loss: 0.0077 - val_mae: 0.0554
+Epoch 2/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0068 - mae: 0.0536 - val_loss: 0.0077 - val_mae: 0.0582
+Epoch 3/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0073 - mae: 0.0562 - val_loss: 0.0081 - val_mae: 0.0626
+Epoch 4/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0064 - mae: 0.0510 - val_loss: 0.0084 - val_mae: 0.0705
+Epoch 5/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0064 - mae: 0.0535 - val_loss: 0.0073 - val_mae: 0.0541
+Epoch 6/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0058 - mae: 0.0477 - val_loss: 0.0084 - val_mae: 0.0633
+Epoch 7/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0067 - mae: 0.0530 - val_loss: 0.0077 - val_mae: 0.0588
+Epoch 8/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0056 - mae: 0.0460 - val_loss: 0.0066 - val_mae: 0.0542
+Epoch 9/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0052 - mae: 0.0445 - val_loss: 0.0057 - val_mae: 0.0482
+Epoch 10/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0048 - mae: 0.0437 - val_loss: 0.0054 - val_mae: 0.0475
+Epoch 11/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0045 - mae: 0.0417 - val_loss: 0.0051 - val_mae: 0.0467
+Epoch 12/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0042 - mae: 0.0404 - val_loss: 0.0058 - val_mae: 0.0494
+Epoch 13/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0038 - mae: 0.0388 - val_loss: 0.0051 - val_mae: 0.0479
+Epoch 14/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0040 - mae: 0.0396 - val_loss: 0.0052 - val_mae: 0.0487
+Epoch 15/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0041 - mae: 0.0404 - val_loss: 0.0052 - val_mae: 0.0452
+Epoch 16/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0039 - mae: 0.0387 - val_loss: 0.0050 - val_mae: 0.0470
+Epoch 17/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0039 - mae: 0.0389 - val_loss: 0.0052 - val_mae: 0.0503
+Epoch 18/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0039 - mae: 0.0383 - val_loss: 0.0050 - val_mae: 0.0480
+Epoch 19/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0039 - mae: 0.0389 - val_loss: 0.0054 - val_mae: 0.0474
+Epoch 20/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0039 - mae: 0.0390 - val_loss: 0.0051 - val_mae: 0.0468
+Epoch 21/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0036 - mae: 0.0375 - val_loss: 0.0051 - val_mae: 0.0447
+Epoch 22/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0037 - mae: 0.0363 - val_loss: 0.0056 - val_mae: 0.0497
+LSTM best validation loss: 0.0050
+--- Training GRU model... ---
+Epoch 1/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0266 - mae: 0.1094 - val_loss: 0.0084 - val_mae: 0.0558
+Epoch 2/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0067 - mae: 0.0492 - val_loss: 0.0079 - val_mae: 0.0534
+Epoch 3/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0066 - mae: 0.0496 - val_loss: 0.0077 - val_mae: 0.0615
+Epoch 4/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0063 - mae: 0.0490 - val_loss: 0.0071 - val_mae: 0.0527
+Epoch 5/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0059 - mae: 0.0481 - val_loss: 0.0071 - val_mae: 0.0529
+Epoch 6/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0059 - mae: 0.0478 - val_loss: 0.0068 - val_mae: 0.0513
+Epoch 7/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0059 - mae: 0.0475 - val_loss: 0.0072 - val_mae: 0.0584
+Epoch 8/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0054 - mae: 0.0462 - val_loss: 0.0068 - val_mae: 0.0504
+Epoch 9/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0051 - mae: 0.0429 - val_loss: 0.0068 - val_mae: 0.0509
+Epoch 10/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0056 - mae: 0.0457 - val_loss: 0.0064 - val_mae: 0.0464
+Epoch 11/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0054 - mae: 0.0437 - val_loss: 0.0070 - val_mae: 0.0520
+Epoch 12/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0051 - mae: 0.0436 - val_loss: 0.0067 - val_mae: 0.0506
+Epoch 13/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0049 - mae: 0.0423 - val_loss: 0.0064 - val_mae: 0.0519
+Epoch 14/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0049 - mae: 0.0422 - val_loss: 0.0057 - val_mae: 0.0442
+Epoch 15/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0046 - mae: 0.0412 - val_loss: 0.0054 - val_mae: 0.0523
+Epoch 16/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0038 - mae: 0.0386 - val_loss: 0.0065 - val_mae: 0.0495
+Epoch 17/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0041 - mae: 0.0393 - val_loss: 0.0050 - val_mae: 0.0462
+Epoch 18/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0042 - mae: 0.0401 - val_loss: 0.0050 - val_mae: 0.0424
+Epoch 19/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0040 - mae: 0.0386 - val_loss: 0.0052 - val_mae: 0.0488
+Epoch 20/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0041 - mae: 0.0389 - val_loss: 0.0053 - val_mae: 0.0513
+Epoch 21/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0037 - mae: 0.0382 - val_loss: 0.0049 - val_mae: 0.0467
+Epoch 22/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0038 - mae: 0.0381 - val_loss: 0.0051 - val_mae: 0.0461
+Epoch 23/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0040 - mae: 0.0393 - val_loss: 0.0051 - val_mae: 0.0487
+Epoch 24/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0036 - mae: 0.0368 - val_loss: 0.0050 - val_mae: 0.0475
+Epoch 25/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0037 - mae: 0.0381 - val_loss: 0.0052 - val_mae: 0.0465
+GRU best validation loss: 0.0049
+--- Selecting GRU model ---
+
+--- Evaluating GRU for 30-minute horizon ---
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step  
+Train MAE:  8.52 mg/dL
+Train RMSE: 13.21 mg/dL
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step
+Validation MAE:  10.03 mg/dL
+Validation RMSE: 15.01 mg/dL
+50/50 ━━━━━━━━━━━━━━━━━━━━ 0s 881us/step
+Test MAE:  9.88 mg/dL
+Test RMSE: 14.87 mg/dL
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+Best model (GRU) saved to models/lstm_mv_30.h5
+
+--- Training for 60-minute horizon ---
+--- Training LSTM model... ---
+Epoch 1/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 2s 5ms/step - loss: 0.0258 - mae: 0.1018 - val_loss: 0.0095 - val_mae: 0.0749
+Epoch 2/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0071 - mae: 0.0565 - val_loss: 0.0082 - val_mae: 0.0637
+Epoch 3/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0071 - mae: 0.0567 - val_loss: 0.0086 - val_mae: 0.0614
+Epoch 4/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 6ms/step - loss: 0.0070 - mae: 0.0552 - val_loss: 0.0084 - val_mae: 0.0642
+Epoch 5/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - loss: 0.0064 - mae: 0.0542 - val_loss: 0.0086 - val_mae: 0.0650
+Epoch 6/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - loss: 0.0063 - mae: 0.0524 - val_loss: 0.0085 - val_mae: 0.0649
+LSTM best validation loss: 0.0082
+--- Training GRU model... ---
+Epoch 1/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - loss: 0.0178 - mae: 0.0934 - val_loss: 0.0089 - val_mae: 0.0608
+Epoch 2/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0072 - mae: 0.0557 - val_loss: 0.0082 - val_mae: 0.0635
+Epoch 3/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0070 - mae: 0.0567 - val_loss: 0.0077 - val_mae: 0.0588
+Epoch 4/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0074 - mae: 0.0591 - val_loss: 0.0079 - val_mae: 0.0647
+Epoch 5/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0068 - mae: 0.0548 - val_loss: 0.0082 - val_mae: 0.0644
+Epoch 6/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0063 - mae: 0.0525 - val_loss: 0.0081 - val_mae: 0.0578
+Epoch 7/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0063 - mae: 0.0529 - val_loss: 0.0075 - val_mae: 0.0597
+Epoch 8/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0062 - mae: 0.0518 - val_loss: 0.0085 - val_mae: 0.0680
+Epoch 9/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0060 - mae: 0.0519 - val_loss: 0.0071 - val_mae: 0.0574
+Epoch 10/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0061 - mae: 0.0525 - val_loss: 0.0080 - val_mae: 0.0611
+Epoch 11/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0061 - mae: 0.0516 - val_loss: 0.0072 - val_mae: 0.0559
+Epoch 12/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0061 - mae: 0.0519 - val_loss: 0.0080 - val_mae: 0.0647
+Epoch 13/50
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 0.0057 - mae: 0.0496 - val_loss: 0.0074 - val_mae: 0.0561
+GRU best validation loss: 0.0071
+--- Selecting GRU model ---
+
+--- Evaluating GRU for 60-minute horizon ---
+176/176 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step  
+Train MAE:  11.05 mg/dL
+Train RMSE: 16.52 mg/dL
+25/25 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step
+Validation MAE:  12.32 mg/dL
+Validation RMSE: 18.04 mg/dL
+50/50 ━━━━━━━━━━━━━━━━━━━━ 0s 859us/step
+Test MAE:  12.91 mg/dL
+Test RMSE: 18.76 mg/dL
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+Best model (GRU) saved to models/lstm_mv_60.h5

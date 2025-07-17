@@ -1,0 +1,20 @@
+
+--- CGM Summary Statistics ---
+  - Mean Glucose: 130.32 mg/dL
+  - SD Glucose: 36.13 mg/dL
+  - Time < 70 mg/dL: 1.8%
+  - Time 70-180 mg/dL: 85.9%
+  - Time > 180 mg/dL: 12.3%
+  - Largest 1h Rise: 84.17 mg/dL
+  - Largest 1h Fall: -83.72 mg/dL
+
+Simulated user profile:
+  - name: John Prince Alonte
+  - age: 23
+  - sex: male
+  - diabetes_type: type_2
+  - years_since_diagnosis: 2
+  - is_insulin_dependent: False
+  - comorbidities: ['hypertension']
+  - medications: ['Metformin']
+  - baseline_a1c: 7.1

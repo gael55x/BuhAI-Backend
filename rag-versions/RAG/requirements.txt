@@ -1,0 +1,23 @@
+# --- ML/Data Science ---
+scikit-learn
+pandas
+numpy
+tensorflow
+joblib
+
+# --- Backend API ---
+Flask
+Flask-Cors
+gunicorn
+
+# --- Database & Vector Store ---
+SQLAlchemy
+chromadb
+sentence-transformers
+
+# --- LLM / Embeddings (Gemini) ---
+google-generativeai
+langchain-google-genai
+
+# --- Utilities ---
+python-dotenv 

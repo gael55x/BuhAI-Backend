@@ -1,1 +1,4 @@
 .env
+/rag-versions/RAG-v2/.env
+/rag-versions/RAG-SIMPLIFIED-v1/.env
+/rag-versions/RAG/.env

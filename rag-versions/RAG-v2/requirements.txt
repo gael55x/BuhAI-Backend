@@ -1,0 +1,24 @@
+# --- ML/Data Science ---
+scikit-learn
+pandas
+numpy
+tensorflow
+joblib
+
+# --- Server ---
+Flask
+Flask-Cors
+gunicorn
+
+# --- Database & RAG ---
+SQLAlchemy
+chromadb
+sentence-transformers
+python-dotenv
+
+# --- LLM ---
+google-generativeai
+tf-keras
+
+# --- Testing ---
+pytest 
