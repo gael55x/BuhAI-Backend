@@ -323,7 +323,8 @@ class ChatLogic:
                 self.data_handler.add_chat_turn(user_id, 'assistant', final_response)
             
         api_response = {
-            "reply_bisaya": final_response,
+            "reply_bisaya": final_response,  # Keep the key name for frontend compatibility
+            "reply": final_response,  # Add new key for future use
             "alert_level": "WARNING" if execution_results.get("first_aid") else "NONE",
             "predictions": context.get("glucose_prediction"),
             "summary": context.get('stats') if router_response.get('intent', '').startswith('get_summary') else None,
