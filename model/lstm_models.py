@@ -15,7 +15,7 @@ from tensorflow.keras.models import Sequential, load_model
 warnings.filterwarnings("ignore")
 
 # --- Constants ---
-DATA_DIR = Path("data")
+DATA_DIR = Path("../data/dataset-user")
 MODELS_DIR = Path("models")
 CGM_FILE = DATA_DIR / "cgm_stream.csv"
 MEAL_FILE = DATA_DIR / "meal_events.csv"
