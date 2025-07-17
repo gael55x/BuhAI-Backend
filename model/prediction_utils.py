@@ -11,8 +11,16 @@ from typing import Dict, List, Optional, Tuple, Any
 import numpy as np
 import pandas as pd
 import joblib
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
+
+# Fix for Keras model loading issue
+import tensorflow.keras.utils as utils
+try:
+    utils.get_custom_objects().update({"mse": "mse", "mae": "mae"})
+except:
+    pass
 
 warnings.filterwarnings("ignore")
 
@@ -61,9 +69,23 @@ class GLucosePredictionModel:
             # Load scalers
             self.scalers = joblib.load(SCALER_PATH)
             
-            # Load models
-            self.model_30_min = load_model(MODEL_30_MIN_PATH)
-            self.model_60_min = load_model(MODEL_60_MIN_PATH)
+            # Load models with custom objects
+            custom_objects = {
+                'mse': 'mse',
+                'mae': 'mae'
+            }
+            
+            try:
+                self.model_30_min = load_model(MODEL_30_MIN_PATH, custom_objects=custom_objects)
+                self.model_60_min = load_model(MODEL_60_MIN_PATH, custom_objects=custom_objects)
+            except:
+                # Fallback: try loading without custom objects and recompile
+                self.model_30_min = load_model(MODEL_30_MIN_PATH, compile=False)
+                self.model_60_min = load_model(MODEL_60_MIN_PATH, compile=False)
+                
+                # Recompile models
+                self.model_30_min.compile(optimizer="adam", loss="mse", metrics=["mae"])
+                self.model_60_min.compile(optimizer="adam", loss="mse", metrics=["mae"])
             
             self.is_loaded = True
             return True
