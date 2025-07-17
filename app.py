@@ -1,6 +1,7 @@
 from flask import Flask
 from db.models import init_db
 from api.chat_blueprint import chat_bp
+from api.prediction_blueprint import prediction_bp
 import os
 
 def create_app(db_path=None):
@@ -19,10 +20,11 @@ def create_app(db_path=None):
         init_db(db_path)
                  
     app.register_blueprint(chat_bp)
+    app.register_blueprint(prediction_bp, url_prefix='/api/v1')
     
     @app.route("/")
     def index():
-        return "BuhAI Chat API is running. Use the /api/v1/chat endpoint."
+        return "BuhAI Chat API is running. Use the /api/v1/chat endpoint for chat and /api/v1/predict for glucose predictions."
     
     return app
 
